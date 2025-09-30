@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.StudentRequestHistoryAdvisorController">
+   <children>
+      <TableView fx:id="requestsTable" layoutX="123.0" layoutY="203.0" prefHeight="423.0" prefWidth="728.0">
+         <columns>
+            <TableColumn fx:id="dateColumn" prefWidth="202.4000701904297" text="วัน/เดือน - เวลา" />
+            <TableColumn fx:id="typeColumn" minWidth="0.0" prefWidth="218.39996337890625" text="รายการคำร้อง" />
+            <TableColumn fx:id="statusColumn" prefWidth="305.5999755859375" text="สถานะ" />
+         </columns>
+      </TableView>
+      <TextField fx:id="searchTextField" alignment="CENTER" layoutX="608.0" layoutY="47.0" prefHeight="26.0" prefWidth="186.0" promptText="ประเภทหรือสถานะที่ต้องการค้นหา" />
+      <Button layoutX="807.0" layoutY="46.0" mnemonicParsing="false" onAction="#onSearchButton" style="-fx-background-color: #006c67;" text="ค้นหา" textFill="WHITE" />
+      <Label layoutX="136.0" layoutY="34.0" text="ประวัติรายการคำร้องของนิสิต" textFill="#006c67">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="233.0" layoutY="121.0" prefHeight="26.0" prefWidth="253.0" text="ชื่อนิสิต">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Circle fx:id="imageCircle" fill="#8b8d8b" layoutX="168.0" layoutY="134.0" radius="33.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Button layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#onBackButton" prefHeight="35.0" prefWidth="68.0" style="-fx-background-color: #006c67;" text="กลับ" textFill="WHITE" />
+   </children>
+</AnchorPane>

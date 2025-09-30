@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.RequestGeneralStudentController">
+   <children>
+      <Label layoutX="142.0" layoutY="62.0" text="คำร้องทั่วไป (General Request)">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="274.0" text="เรื่อง">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="topicChoice" layoutX="193.0" layoutY="275.0" prefHeight="26.0" prefWidth="226.0" />
+      <Label layoutX="142.0" layoutY="164.0" text="ชื่อ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTextField" editable="false" layoutX="167.0" layoutY="166.0" prefHeight="26.0" prefWidth="226.0" />
+      <Label layoutX="418.0" layoutY="164.0" text="รหัสนิสิต">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idTextField" editable="false" layoutX="476.0" layoutY="166.0" />
+      <Label layoutX="652.0" layoutY="164.0" text="ชั้นปีที่">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="210.0" text="คณะ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="343.0" layoutY="209.0" prefHeight="30.0" prefWidth="51.0" text="สาขา">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="594.0" layoutY="210.0" text="หมายเลขโทรศัพท์">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="telTextField" layoutX="700.0" layoutY="211.0" prefHeight="26.0" prefWidth="106.0" />
+      <Button alignment="CENTER" layoutX="377.0" layoutY="601.0" mnemonicParsing="false" onAction="#onConfirmButton" prefHeight="30.0" prefWidth="71.0" style="-fx-background-color: #006c67;" text="ยืนยัน" textFill="WHITE" />
+      <Button alignment="CENTER" layoutX="501.0" layoutY="601.0" mnemonicParsing="false" onAction="#onCancelButton" prefHeight="30.0" prefWidth="71.0" style="-fx-background-color: #006c67;" text="ยกเลิก" textFill="WHITE" />
+      <TextField fx:id="reasonTextField" layoutX="194.0" layoutY="364.0" prefHeight="26.0" prefWidth="599.0" />
+      <TextField fx:id="nameThaiChangeFromTextField" layoutX="193.0" layoutY="491.0" prefHeight="26.0" prefWidth="266.0" promptText="จาก" />
+      <TextField fx:id="nameThaiChangeToTextField" layoutX="492.0" layoutY="491.0" prefHeight="26.0" prefWidth="266.0" promptText="เป็น" />
+      <TextField fx:id="nameEngChangeFromTextField" layoutX="193.0" layoutY="456.0" prefHeight="26.0" prefWidth="266.0" promptText="from" />
+      <TextField fx:id="nameEngChangeToTextField" layoutX="492.0" layoutY="456.0" prefHeight="26.0" prefWidth="266.0" promptText="to" />
+      <ChoiceBox fx:id="lossOrDamageChoice" layoutX="193.0" layoutY="319.0" prefHeight="26.0" prefWidth="266.0" />
+      <Button fx:id="fileAttachment1Button" layoutX="193.0" layoutY="408.0" mnemonicParsing="false" onAction="#attachFile1" prefHeight="26.0" prefWidth="350.0" wrapText="true" />
+      <TextField fx:id="yearTextField" editable="false" layoutX="696.0" layoutY="166.0" prefHeight="26.0" prefWidth="51.0" />
+      <TextField fx:id="majorTextField" editable="false" layoutX="391.0" layoutY="211.0" prefHeight="26.0" prefWidth="174.0" />
+      <TextField fx:id="facultyTextField" editable="false" layoutX="174.0" layoutY="211.0" prefHeight="26.0" prefWidth="158.0" />
+      <Label fx:id="errorText" layoutX="399.0" layoutY="531.0" prefHeight="54.0" prefWidth="275.0" text="กรุณากรอกข้อมูลให้ครบถ้วน" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

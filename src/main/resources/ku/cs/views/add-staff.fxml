@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.AddStaffController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-background-color: #04635a;" text="กลับ" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eef4f7" height="470.0" layoutX="166.0" layoutY="90.0" stroke="TRANSPARENT" strokeType="INSIDE" width="470.0" />
+      <Label fx:id="statusLabel" layoutX="383.0" layoutY="504.0" text="status" textFill="#009e0b">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ChoiceBox fx:id="roleChoice" layoutX="527.0" layoutY="100.0" prefHeight="26.0" prefWidth="100.0" />
+      <HBox alignment="CENTER" layoutX="301.0" layoutY="440.0" prefHeight="50.0" prefWidth="200.0" spacing="50.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #04635a;" text="เพิ่ม" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#onCancelButtonClick" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #04635a;" text="ยกเลิก" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <TilePane alignment="CENTER" hgap="30.0" layoutX="201.0" layoutY="190.0" prefHeight="250.0" prefWidth="400.0" vgap="5.0">
+         <children>
+            <VBox prefHeight="70.0" prefWidth="150.0" spacing="2.0">
+               <children>
+                  <Label text="ชื่อ-นามสกุล" textFill="#757575">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameTextField" />
+                  <Label fx:id="nameErrorLabel" text="nameErrorLabel" textFill="RED">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="70.0" prefWidth="150.0" spacing="2.0">
+               <children>
+                  <Label text="ชื่อบัญชีผู้ใช้" textFill="#757575">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameTextField" />
+                  <Label fx:id="usernameErrorLabel" text="usernameErrorLabel" textFill="RED">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="70.0" prefWidth="150.0" spacing="2.0">
+               <children>
+                  <Label text="รหัสผ่านเริ่มต้น" textFill="#757575">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="defaultPasswordTextField" />
+                  <Label fx:id="defaultPasswordErrorLabel" text="defaultPasswordError" textFill="RED">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="70.0" prefWidth="150.0" spacing="2.0">
+               <children>
+                  <Label text="คณะ" textFill="#757575">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="facultyChoice" prefWidth="150.0" />
+                  <Label fx:id="facultyErrorLabel" text="facultyErrorLabel" textFill="RED">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="majorVbox" prefHeight="70.0" prefWidth="150.0" spacing="2.0">
+               <children>
+                  <Label fx:id="majorLabel" text="ภาควิชา" textFill="#757575">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="majorChoice" prefWidth="150.0" />
+                  <Label fx:id="majorErrorLabel" text="majorErrorLabel" textFill="RED">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox fx:id="idVbox" prefHeight="70.0" prefWidth="150.0" spacing="2.0">
+               <children>
+                  <Label fx:id="idLabel" text="รหัสประจำตัว" textFill="#757575">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idTextField" />
+                  <Label fx:id="idErrorLabel" text="idErrorLabel" textFill="RED">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </TilePane>
+      <Label fx:id="addTitle" layoutX="235.0" layoutY="154.0" text="addTitle">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#006c67" height="680.0" layoutX="801.0" stroke="TRANSPARENT" strokeType="INSIDE" width="150.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.RegisterController">
+   <children>
+      <Label layoutX="395.0" layoutY="99.0" text="ลงทะเบียน" textFill="#006c67">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="86.0" layoutY="218.0" prefHeight="40.0" prefWidth="335.0" style="-fx-border-color: #e0e0e0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="studentIdTextField" alignment="CENTER" layoutX="528.0" layoutY="292.0" prefHeight="40.0" prefWidth="158.0" style="-fx-border-color: #e0e0e0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailTextField" alignment="CENTER" layoutX="528.0" layoutY="365.0" prefHeight="40.0" prefWidth="335.0" style="-fx-border-color: #e0e0e0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button alignment="CENTER" layoutX="306.0" layoutY="506.0" mnemonicParsing="false" onAction="#onConfirmRegistration" prefHeight="35.0" prefWidth="335.0" style="-fx-background-color: #006c67;" text="ลงทะเบียน" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="630.0" mnemonicParsing="false" onAction="#onBackButton" prefHeight="35.0" prefWidth="68.0" style="-fx-background-color: #006c67;" text="กลับ" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label fx:id="messageLabel" alignment="TOP_CENTER" layoutX="135.0" layoutY="451.0" prefHeight="20.0" prefWidth="677.0" text="ErrorText" textFill="#ff0101">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="200.0" text="ชื่อบัญชีผู้ใช้" textFill="#757575" />
+      <Label layoutX="87.0" layoutY="274.0" text="รหัสผ่าน" textFill="#757575" />
+      <Label layoutX="87.0" layoutY="347.0" text="ยืนยันรหัสผ่าน" textFill="#757575" />
+      <Label layoutX="528.0" layoutY="274.0" text="รหัสนิสิต" textFill="#757575" />
+      <Label layoutX="528.0" layoutY="347.0" text="อีเมล" textFill="#757575" />
+      <Label layoutX="705.0" layoutY="274.0" text="ชั้นปี" textFill="#757575" />
+      <TextField fx:id="nameTextField" alignment="CENTER" layoutX="528.0" layoutY="218.0" prefHeight="40.0" prefWidth="335.0" style="-fx-border-color: #e0e0e0;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="528.0" layoutY="200.0" text="ชื่อ-นามสกุล" textFill="#757575" />
+      <ChoiceBox fx:id="yearChoiceBox" layoutX="705.0" layoutY="292.0" prefHeight="40.0" prefWidth="157.0" style="-fx-border-color: #e0e0e0; -fx-background-color: #ffffff;" />
+      <PasswordField fx:id="passwordField" layoutX="86.0" layoutY="292.0" prefHeight="40.0" prefWidth="335.0" />
+      <PasswordField fx:id="confirmPasswordField" layoutX="86.0" layoutY="365.0" prefHeight="40.0" prefWidth="335.0" />
+      <ImageView fx:id="logo" fitHeight="120.0" fitWidth="100.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

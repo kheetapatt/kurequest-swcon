@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AdminEditStaffBackground" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.AdvisorInfoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eef4f7" height="703.0" layoutX="-21.0" layoutY="-23.0" stroke="TRANSPARENT" strokeType="INSIDE" width="192.0" />
+      <TableView fx:id="advisorInfoTable" layoutX="207.0" layoutY="157.0" prefHeight="486.0" prefWidth="694.0" style="-fx-border-insets: #b5f9c9;" />
+      <Circle fx:id="profileAdminCircle" fill="DODGERBLUE" layoutX="83.0" layoutY="55.0" radius="33.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Button fx:id="onListStudentButton" layoutX="33.0" layoutY="244.0" mnemonicParsing="false" onAction="#onListStudentButtonClick" prefHeight="162.0" prefWidth="100.0" style="-fx-background-color: #8b8d8b;" text="นิสิต  ในที่ปรึกษา" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="onListReqButton" layoutX="33.0" layoutY="439.0" mnemonicParsing="false" onAction="#onListReqButtonClick" prefHeight="162.0" prefWidth="100.0" style="-fx-background-color: #006c67;" text="รายการคำร้อง" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ChoiceBox fx:id="choiceBoxForStaff" layoutX="731.0" layoutY="41.0" prefHeight="30.0" prefWidth="104.0" />
+      <TextField fx:id="giveData" alignment="CENTER" layoutX="211.0" layoutY="42.0" prefHeight="30.0" prefWidth="504.0" promptText="กรอกข้อมูลที่ต้องการค้นหา">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button fx:id="onSearchData" layoutX="849.0" layoutY="41.0" mnemonicParsing="false" onAction="#onSearchDataClick" style="-fx-background-color: #006c67;" text="ค้นหา" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Label fx:id="dontHaveData" layoutX="735.0" layoutY="78.0" text="ไม่พบข้อมูล" textFill="#ff3333">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="editDataButton" layoutX="33.0" layoutY="144.0" mnemonicParsing="false" onAction="#editDataButtonClick" style="-fx-background-color: #8b8d8b;" text="แก้ไขข้อมูลส่วนตัว" textFill="#fffefe" />
+      <Button fx:id="onLogoutButton" layoutX="33.0" layoutY="177.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #8b8d8b;" text="ออกจากระบบ" textFill="#fffefe" />
+      <HBox alignment="CENTER" layoutX="8.0" layoutY="90.0" prefHeight="30.0" prefWidth="150.0">
+         <children>
+            <Label fx:id="staffData" text="ข้อมูลสตาฟ" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

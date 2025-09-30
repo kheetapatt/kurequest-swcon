@@ -1,0 +1,7 @@
+*
+!pdf-file-list
+!user-images
+!*.pdf
+!*.png
+!*.csv
+!.gitignore

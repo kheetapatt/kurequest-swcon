@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.LoginController">
+   <children>
+      <Label layoutX="376.0" layoutY="151.0" text="KURequest" textFill="#006c67">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameTextField" layoutX="338.0" layoutY="256.0" prefHeight="38.0" prefWidth="273.0" style="-fx-border-color: #e0e0e0;" />
+      <PasswordField fx:id="passwordField" layoutX="338.0" layoutY="333.0" prefHeight="38.0" prefWidth="274.0" style="-fx-border-color: #e0e0e0;" />
+      <Button alignment="CENTER" layoutX="338.0" layoutY="445.0" mnemonicParsing="false" onAction="#onLogInButtonClick" prefHeight="38.0" prefWidth="274.0" style="-fx-background-color: #006c67;" text="เข้าสู่ระบบ" textAlignment="CENTER" textFill="WHITE" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" layoutX="433.0" layoutY="502.0" mnemonicParsing="false" onAction="#onRegisterButton" prefHeight="0.0" prefWidth="84.0" style="-fx-background-color: #ffffff;" text="ลงทะเบียน" textAlignment="CENTER" textFill="#006c67" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="logo" fitHeight="120.0" fitWidth="100.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+
+      </ImageView>
+      <Label fx:id="tryAgainLabel" alignment="CENTER" layoutX="288.0" layoutY="399.0" prefHeight="15.0" prefWidth="374.0" text="errorMessage" textFill="RED">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="861.0" layoutY="14.0" mnemonicParsing="false" onAction="#onDevButton" prefHeight="0.0" prefWidth="74.0" style="-fx-background-color: #006c67;" text="ผู้พัฒนา" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="338.0" layoutY="315.0" text="รหัสผ่าน" />
+      <Label layoutX="338.0" layoutY="238.0" text="ชื่อบัญชีผู้ใช้" />
+      <Button layoutX="697.0" layoutY="14.0" mnemonicParsing="false" onAction="#onInstructionButton" prefHeight="30.0" prefWidth="151.0" style="-fx-background-color: #006c67;" text="คำแนะนำการใช้โปรแกรม" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="backgroundRequestStudentPage" prefHeight="680.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.TableRequestsStudentController">
+   <children>
+      <TableView fx:id="requestsTable" layoutX="208.0" layoutY="171.0" prefHeight="474.0" prefWidth="680.0" style="-fx-border-color: #066664;">
+        <columns>
+           <TableColumn fx:id="dateColumn" prefWidth="180.0" text="วัน/เวลาที่ดำเนินการล่าสุด" />
+           <TableColumn fx:id="typeColumn" minWidth="0.0" prefWidth="160.0" text="ประเภท" />
+           <TableColumn fx:id="statusColumn" prefWidth="170.0" text="สถานะ" />
+            <TableColumn fx:id="processColumn" prefWidth="170.0" text="การดำเนินการ" />
+
+<!--            <TableColumn prefWidth="140.79998779296875" text="วัน/เดือน - เวลา" />-->
+<!--          <TableColumn minWidth="0.0" prefWidth="247.20001220703125" text="รายการคำร้อง" />-->
+<!--          <TableColumn prefWidth="134.39996337890625" text="สถานะ" />-->
+
+        </columns>
+      </TableView>
+      <TextField fx:id="searchTextField" alignment="CENTER" layoutX="208.0" layoutY="34.0" prefHeight="30.0" prefWidth="624.0" promptText="กรอกประเภทหรือการดำเนินการของคำร้องที่ต้องการค้นหา" />
+      <Button layoutX="844.0" layoutY="33.0" mnemonicParsing="false" onAction="#onSearchButton" prefHeight="30.0" prefWidth="43.0" style="-fx-background-color: #006c67;" text="ค้นหา" textFill="WHITE" />
+      <VBox alignment="TOP_CENTER" prefHeight="680.0" prefWidth="160.0" spacing="30.0" style="-fx-background-color: #EEF4F7;">
+         <children>
+            <Circle fx:id="imageCircle" fill="#8b8d8b" radius="32.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Label fx:id="nameLabel" alignment="CENTER" prefHeight="18.0" prefWidth="127.0" text="ชื่อนิสิต" />
+            <Button mnemonicParsing="false" onAction="#onEditStudentButton" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #8b8d8b;" text="แก้ไขข้อมูลส่วนตัว" textFill="WHITE" />
+            <Button mnemonicParsing="false" onAction="#onLogoutButton" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #8b8d8b;" text="ออกจากระบบ" textFill="WHITE" />
+            <Button fx:id="createRequest" alignment="CENTER" mnemonicParsing="false" onAction="#onCreateRequestButton" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: #006c67;" text="สร้างคำร้อง" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="statusRequest" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onStatusRequestButton" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: #8b8d8b;" text="ติดตามคำร้อง" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </VBox>
+      <Label layoutX="208.0" layoutY="91.0" text="รายการคำร้อง" textFill="#006c67">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

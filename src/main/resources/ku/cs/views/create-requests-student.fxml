@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="950.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.CreateRequestsStudentController">
+   <children>
+      <VBox alignment="CENTER" layoutX="413.0" layoutY="192.0" prefHeight="300.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Button fx:id="generalRequest" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onGeneralRequestButton" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: #006c67;" text="คำร้องทั่วไป" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="requestForRegistration" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onRequestForRegistrationButton" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: #006c67;" text="คำร้องขอลงทะเบียนเรียน" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="resignationForm" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onResignationFormButton" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: #006c67;" text="ใบลาออก" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutY="3.0" prefHeight="680.0" prefWidth="160.0" spacing="30.0" style="-fx-background-color: #EEF4F7;">
+         <children>
+            <Circle fx:id="imageCircle" fill="#757575" radius="32.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Label fx:id="nameLabel" alignment="CENTER" prefHeight="18.0" prefWidth="127.0" text="ชื่อนิสิต" />
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#onEditStudentButton" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #8b8d8b;" text="แก้ไขข้อมูลส่วนตัว" textFill="WHITE">
+            <Button fx:id="createRequest1" alignment="CENTER" mnemonicParsing="false" onAction="#onCreateRequestButton" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: #006664;" text="สร้างคำร้อง" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#onLogoutButton" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #8b8d8b;" text="ออกจากระบบ" textFill="WHITE" />
+            <Button fx:id="createRequest" alignment="CENTER" mnemonicParsing="false" onAction="#onCreateRequestButton" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: #8b8d8b;" text="สร้างคำร้อง" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="statusRequest" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onStatusRequestButton" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: #006c67;" text="ติดตามคำร้อง" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </VBox>
+      <Label layoutX="218.0" layoutY="46.0" text="สร้างคำร้อง" textFill="#006c67">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="218.0" layoutY="472.0" prefHeight="40.0" prefWidth="590.0" text="errorMessage" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

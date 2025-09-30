@@ -1,0 +1,9 @@
+*
+!data
+!application-detail
+!*.pdf
+!*.png
+!*.csv
+!*.jar
+!*.zip
+!.gitignore

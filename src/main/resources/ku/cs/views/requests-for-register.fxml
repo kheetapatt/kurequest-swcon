@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="950.0" style="-fx-background-color: #0000;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.RequestForRegistrationController">
+   <children>
+      <Label layoutX="277.0" layoutY="142.0" />
+      <TextField fx:id="nameBox" layoutX="194.0" layoutY="106.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="idBox" layoutX="456.0" layoutY="106.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="yearNowBox" layoutX="712.0" layoutY="106.0" prefHeight="30.0" prefWidth="51.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="facultyBox" layoutX="194.0" layoutY="150.0" prefHeight="30.0" prefWidth="174.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="majorBox" layoutX="456.0" layoutY="150.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="phoneBox" layoutX="194.0" layoutY="251.0" prefHeight="30.0" prefWidth="174.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="emailBox" layoutX="194.0" layoutY="199.0" prefHeight="30.0" prefWidth="174.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <ChoiceBox fx:id="requestForBox" layoutX="190.0" layoutY="295.0" prefHeight="26.0" prefWidth="162.0" />
+      <Button fx:id="ku1" layoutX="214.0" layoutY="343.0" mnemonicParsing="false" onAction="#onAddKU1" prefHeight="26.0" prefWidth="106.0" text="แนบไฟล์ Ku1">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="ku3" layoutX="214.0" layoutY="343.0" mnemonicParsing="false" onAction="#onAddKU3" prefHeight="26.0" prefWidth="106.0" text="แนบไฟล์ Ku3">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="semesterBox" layoutX="207.0" layoutY="390.0" prefHeight="26.0" prefWidth="60.0" />
+      <TextField fx:id="yearBox" layoutX="349.0" layoutY="390.0" prefHeight="26.0" prefWidth="60.0" />
+      <TextField fx:id="changeCreditBox" layoutX="491.0" layoutY="390.0" prefHeight="26.0" prefWidth="66.0" />
+      <TextField fx:id="changeCreditToBox" layoutX="650.0" layoutY="389.0" prefHeight="26.0" prefWidth="66.0" />
+      <Label fx:id="semester" layoutX="168.0" layoutY="390.0" prefHeight="27.0" prefWidth="38.0" text="ภาค" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="year" layoutX="284.0" layoutY="390.0" prefHeight="27.0" prefWidth="82.0" text="ปีการศึกษา" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="changeCredit" layoutX="425.0" layoutY="390.0" prefHeight="27.0" prefWidth="66.0" text="เปลี่ยนจาก" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="changeCreditTo" layoutX="568.0" layoutY="389.0" prefHeight="27.0" prefWidth="98.0" text="หน่วยกิต เป็น" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="changeCreditTo2" layoutX="731.0" layoutY="388.0" prefHeight="26.0" prefWidth="66.0" text="หน่วยกิต">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fromBox" layoutX="209.0" layoutY="444.0" prefHeight="26.0" prefWidth="50.0" />
+      <Label fx:id="from" layoutX="164.0" layoutY="443.0" prefHeight="27.0" prefWidth="38.0" text="จาก" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="toBox" layoutX="349.0" layoutY="444.0" prefHeight="26.0" prefWidth="50.0" />
+      <Label fx:id="to" layoutX="304.0" layoutY="443.0" prefHeight="27.0" prefWidth="38.0" text="เป็น" textOverrun="CLIP">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="reason" layoutX="71.0" layoutY="490.0" text="เนื่องจาก">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="reasonBox" layoutX="134.0" layoutY="485.0" prefHeight="26.0" prefWidth="290.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label layoutX="71.0" layoutY="28.0" text="คำร้องขอลงทะเบียนเรียน (Request for Registration)">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="111.0" text="ชื่อ-นามสกุล">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="111.0" text="รหัสนิสิต">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="659.0" layoutY="111.0" text="ชั้นปีที่">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="155.0" text="คณะ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="418.0" layoutY="155.0" text="สาขา">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="155.0" layoutY="204.0" text="อีเมล">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="256.0" text="หมายเลขโทรศัพท์">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="391.0" layoutY="560.0" prefHeight="50.0" prefWidth="200.0" spacing="70.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onClickSave" style="-fx-background-color: #006C67;" text="ยืนยัน" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onClickGoBack" style="-fx-background-color: #006C67;" text="ยกเลิก" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="341.0" layoutY="610.0" prefHeight="40.0" prefWidth="300.0">
+         <children>
+            <Label fx:id="errorText" text="กรุณากรอกข้อมูลให้ครบถ้วน" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+
+   </children>
+</AnchorPane>
